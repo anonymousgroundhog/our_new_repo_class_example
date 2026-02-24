@@ -1,0 +1,1 @@
+# our_new_repo_class_example
