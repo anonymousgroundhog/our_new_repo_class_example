@@ -1,0 +1,60 @@
+    1  ssh-keygen -t ed25519 -C "leapfrogopus@gmail.com"
+    2  ls
+    3  history
+    4  eval "$(ssh-agent -s)"
+    5  ssh-add github
+    6  cat github.pub 
+    7  ssh -T git@github.com
+    8  history
+    9  ssh -T git@github.com
+   10  git config --global user.email "leapfrogopus@gmail.com"
+   11  git config --global user.name "anonymousgroundhog"
+   12  ssh -T git@github.com
+   13  mkdir new_dir
+   14  cd new_dir/
+   15  ls
+   16  echo "# our_new_repo_class_example" >> README.md
+   17  git init
+   18  git add README.md
+   19  git commit -m "first commit"
+   20  git branch -M main
+   21  git remote add origin git@github.com:anonymousgroundhog/our_new_repo_class_example.git
+   22  git push -u origin main
+   23  clear
+   24  history
+   25  git log
+   26  git log --oneline
+   27  git status
+   28  echo "# Some new file" >> new_file.txt
+   29  ls
+   30  git status
+   31  git add .
+   32  git status
+   33  git commit -m "Adding a new file"
+   34  git push origin main
+   35  history
+   36  git branch
+   37  git branch new_branch
+   38  git branch
+   39  git switch new_branch 
+   40  git branch
+   41  git status
+   42  git log
+   43  git push origin new_branch 
+   44  history
+   45  git branch
+   46  ls
+   47  echo "some more code" >> example_code.txt
+   48  git add .
+   49  git commit -m "Adding a new file"
+   50  git push origin new_branch 
+   51  history
+   52  git switch main
+   53  ls
+   54  git checkout new_branch -- example_code.txt
+   55  ls
+   56  git add .
+   57  git commit -m "adding a new file"
+   58  git push origin main
+   59  history
+   60  history > my_history.txt
